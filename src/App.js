@@ -4,14 +4,14 @@ import web3 from './web3/web3';
 
 class App extends Component {
   state = {
-    erc20Address: '0x0000000000000000000000000000000000000000',
-    spenderAddress: '0x0000000000000000000000000000000000000000',
+    erc20Address: '',
+    spenderAddress: '',
     amount: 0,
     account: '',
 
     // allowance
-    erc20AddressA: '0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD', // AAVE DAI address
-    spenderAddressA: '0x0000000000000000000000000000000000000000',
+    erc20AddressA: '',
+    spenderAddressA: '',
     allowance: 0,
   }
 
