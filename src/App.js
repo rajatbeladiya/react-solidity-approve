@@ -17,6 +17,9 @@ class App extends Component {
 
   async componentDidMount() {
     const [account] = await web3.eth.getAccounts();
+    if (!account) {
+      await window.ethereum.enable();
+    }
     this.setState({ account });
   }
   
